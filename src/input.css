@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent;
+  }
+
+  .card {
+    @apply rounded-xl border border-ink-100 bg-white p-5 shadow-sm;
+  }
+}
+
+@layer utilities {
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+
+    body {
+      background: white !important;
+    }
+
+    .card {
+      box-shadow: none !important;
+      border-color: #e8ecf0 !important;
+    }
+  }
+}
