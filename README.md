@@ -26,13 +26,13 @@ npm run dev
 docker compose up --build
 ```
 
-Abre [http://localhost:8080](http://localhost:8080).
+Abre [http://localhost](http://localhost).
 
 Solo imagen Docker:
 
 ```bash
 docker build -t cv-lite .
-docker run -p 8080:80 cv-lite
+docker run -p 80:80 cv-lite
 ```
 
 ## Estructura
