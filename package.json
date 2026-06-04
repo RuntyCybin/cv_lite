@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "build": "npm run build:css && cp public/index.html dist/index.html",
+    "build:assets": "mkdir -p dist/js && cp public/index.html public/favicon.svg dist/ && cp -r public/js dist/ && cp node_modules/blendy/dist/blendy.js dist/blendy.js",
+    "build": "npm run build:css && npm run build:assets",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "blendy": "^0.0.1"
   }
 }
