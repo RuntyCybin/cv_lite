@@ -26,13 +26,13 @@ npm run dev
 docker compose up --build
 ```
 
-Abre [http://localhost:8080](http://localhost:8080).
+Abre [http://localhost](http://localhost).
 
 Solo imagen Docker:
 
 ```bash
 docker build -t cv-lite .
-docker run -p 8080:80 cv-lite
+docker run -p 80:80 cv-lite
 ```
 
 ## Estructura
@@ -49,3 +49,8 @@ nginx.conf
 ## Imprimir / PDF
 
 En el navegador, usa el botón **Imprimir / PDF** o `Ctrl+P` / `Cmd+P`. Los estilos incluyen reglas `@media print`.
+
+
+## Modificar experiencias
+
+Para cambiar el texto de un popup, edita `data-timeline-title` y `data-timeline-text` en el `div.timeline-trigger` correspondiente.

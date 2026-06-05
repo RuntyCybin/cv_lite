@@ -1,396 +1,730 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicolás Shelevoy — CV</title>
-    <meta
-      name="description"
-      content="Currículum de Nicolás Shelevoy — Arquitecto de software Java"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/output.css" />
-  </head>
-  <body class="min-h-screen bg-ink-50 font-sans text-ink-800 antialiased">
-    <div class="no-print fixed inset-x-0 top-0 z-10 border-b border-ink-100 bg-white/90 backdrop-blur">
-      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
-        <span class="text-sm font-medium text-ink-500">CVitae</span>
-        <button
-          onclick="window.print()"
-          class="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent-dark"
-        >
-          Imprimir / PDF
-        </button>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolás Shelevoy — CV</title>
+  <meta name="description" content="CV of Nicolás Shelevoy — Java Software Architect" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/output.css" />
+</head>
+
+<body class="min-h-screen bg-ink-900 font-sans text-ink-100 antialiased">
+  <div class="no-print fixed inset-x-0 top-0 z-10 border-b border-ink-700 bg-ink-900/90 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
+      <span class="text-sm font-medium text-ink-400">CV Lite</span>
+      <button onclick="window.print()"
+        class="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent-dark">
+        Print / PDF
+      </button>
+    </div>
+  </div>
+
+  <main class="mx-auto max-w-5xl px-4 pb-16 pt-20 sm:px-6 sm:pt-24">
+    <header class="mb-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div>
+        <p class="section-title mb-3">Curriculum vitae</p>
+        <h1 class="font-display text-4xl font-bold tracking-tight text-ink-50 sm:text-5xl">
+          Nicolás Shelevoy Shelevoy
+        </h1>
+        <p class="mt-2 text-xl text-ink-400">
+          Java Software Architect · Senior Developer
+        </p>
+        <p class="mt-4 max-w-2xl leading-relaxed text-ink-300" id="main_description">
+          Java enterprise systems specialist (JDK 8–21): design and evolution of
+          distributed platforms, microservices with Spring Boot, hexagonal architecture,
+          OpenAPI APIs, Kafka, and deployment on Kubernetes/OpenShift and AWS. Experience in
+          logistics, intellectual property (EUIPO/EPO), energy, digital banking, and insurance sectors.
+        </p>
       </div>
+      <aside class="card lg:min-w-[300px]">
+        <ul class="space-y-3 text-sm">
+          <li class="flex gap-3">
+            <span class="w-24 shrink-0 font-medium text-ink-500">Email</span>
+            <a href="mailto:nico_dev@protonmail.com" class="text-accent hover:underline">
+              nico_dev@protonmail.com
+            </a>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-24 shrink-0 font-medium text-ink-500">Phone</span>
+            <span>+34 690 01 18 83</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-24 shrink-0 font-medium text-ink-500">Address</span>
+            <span>Av. Alba Rosa 13, 17800 Olot, Girona</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-24 shrink-0 font-medium text-ink-500">Nationality</span>
+            <span>Spanish · 12/11/1986</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-24 shrink-0 font-medium text-ink-500">GitHub</span>
+            <a href="https://github.com/RuntyCybin" class="text-accent hover:underline" target="_blank" rel="noopener">
+              github.com/RuntyCybin
+            </a>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-24 shrink-0 font-medium text-ink-500">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/devnikolay" class="text-accent hover:underline" target="_blank"
+              rel="noopener">
+              linkedin.com/in/devnikolay
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </header>
+
+    <div class="grid gap-8 lg:grid-cols-3">
+      <div class="space-y-8 lg:col-span-2">
+        <section>
+          <h2 class="section-title mb-4">Professional Experience</h2>
+          <hr class="border-ink-700 mb-8" />
+          <p class="mb-6 text-sm text-ink-400">Sector: Information Technology</p>
+
+          <div class="space-y-0">
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Jan
+                2026<br>Present</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-accent ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-indra"
+                data-timeline-title="Java Software Architect — Indra"
+                data-timeline-text="Software Architect for Java enterprise systems; design, governance, and evolution of large-scale distributed platforms."
+                data-timeline-list="Strong focus on scalability, resilience, and maintainability across distributed systems|Contract-first programme: integration defined solely through formal contracts|OpenAPI specifications for external REST communication|Protobuf schemas for internal asynchronous messaging">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Java Software Architect</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.indragroup.com" class="hover:underline" target="_blank"
+                      rel="noopener">Indra</a> · Agile SCRUM
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">A seasoned Software Architect
+                    specializing in Java-based enterprise
+                    systems,
+                    responsible for designing, governing, and evolving large-scale, distributed platforms with a strong
+                    focus on scalability,
+                    resilience, and maintainability.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Mar 2023<br>Dec
+                2025</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-ceva"
+                data-timeline-title="Senior Java Developer — CEVA Logistics"
+                data-timeline-text="Design, development, and maintenance of enterprise Java applications with clean architecture and CI/CD."
+                data-timeline-list="Microservices (JDK 11, Spring Boot): REST, tests with Rest Assured, GitLab, Jenkins and Kubernetes Dashboard.|Web monolith (JDK 8, Spring MVC, PrimeFaces): Liquibase, Selenium, GitLab, Jenkins and Kubernetes.|Hexagonal microservices (JDK 21, Spring Boot, AWS EC2): JPA/Hibernate, Kafka, OpenAPI 3/Swagger, Docker, PostgreSQL/H2, JUnit and deployment on EC2 Linux.">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Senior Java Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.cevalogistics.com" class="hover:underline" target="_blank" rel="noopener">CEVA
+                      Logistics</a> · Kanban
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Design, development, and maintenance of
+                    enterprise Java applications with clean architecture and CI/CD.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Mar 2022<br>Apr
+                2023</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-sopraSteria"
+                data-timeline-title="Senior Java Developer — Sopra Steria"
+                data-timeline-text="Backend microservices engineer responsible for designing and delivering domain-driven services using Spring Boot and BFF architecture. Led containerisation with Docker, cloud deployment on AWS EC2, CI/CD pipelines with Jenkins, and full-stack observability through the ELK stack. Applied Redis for distributed caching and coordinated delivery using Jira in an Agile environment."
+                data-timeline-list="Domain-Driven Design (DDD) and BFF pattern for service boundary definition|Spring Boot microservices with Redis distributed caching|CI/CD pipelines with Jenkins; containerisation with Docker|Cloud deployment on AWS EC2 with ELK stack for centralised logging and monitoring|Agile delivery tracked via Jira">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Senior Java Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.soprasteria.com" class="hover:underline" target="_blank"
+                      rel="noopener">Sopra Steria</a> · Agile SCRUM
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Design and delivery of Spring Boot microservices following DDD and BFF patterns, with Redis caching, Docker containerisation, deployment on AWS EC2, CI/CD via Jenkins, and observability through the ELK stack.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Apr 2021<br>Mar
+                2022</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-atsistemas"
+                data-timeline-title="Senior Java Developer — Knowmad mood"
+                data-timeline-text="Spring Boot refactoring and microservices delivery with QA and DevOps in SCRUM teams."
+                data-timeline-list="Spring Boot refactor with Kiuwan, Jenkins and OpenShift alongside QA and DevOps.|Microservices with Spring Cache, Apache Camel and embedded Tomcat.|Improved test coverage with Mockito, JUnit and Jacoco integrated in CI/CD pipelines.">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Senior Java Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.atsistemas.com" class="hover:underline" target="_blank"
+                      rel="noopener">Knowmad mood</a> · SCRUM
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Refactor Spring Boot with Kiuwan,
+                    Jenkins and OpenShift together with QA and DevOps teams.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Oct 2020<br>Apr
+                2021</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-everis"
+                data-timeline-title="Java Developer — everis (EPO)"
+                data-timeline-text="Full-stack Java development for the European Patent Office (EPO); Spring, Angular, and workflow automation."
+                data-timeline-list="First 3 months worked as a full stack developer with Spring Boot, Angular TS, embedded Tomcat and MySQL|
+                Then 5 months worked as a backend developer with Spring Boot JDK 11, Camunda 7.15, JPA, Jenkins and Elastic for data monitoring|
+                The project is a TDD based application where the unitary tests were described with Junit / Mockito|
+                MongoDB as a non relational database|
+                Kafka for microservices comunications|
+                BPMN workflow design, workers and user tasks for the EPO.">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Java Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.everis.com" class="hover:underline" target="_blank" rel="noopener">Everis (NTT
+                      DATA)</a> · Agile SCRUM
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Full-stack delivery using Spring, Angular, 
+                    Camunda BPMN, Kafka, and automated workflows.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Dec 2019<br>Aug
+                2020</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-hiberus"
+                data-timeline-title="Full-stack Java Developer at Hiberus (EUIPO)"
+                data-timeline-text="Full - stack Java development for EUIPO using SCRUM, Spring stack, kafka messaging, and data indexing."
+                data-timeline-list="Backend development with JDK 7, Spring Data/MVC/Web, JPA|
+                Native Kafka messaging for internal communication between services|
+                Data indexing with Apache Solr|
+                Frontend with JSP for improved performance and SEO|
+                CI/CD with Bamboo|
+                Database: MySQL|
+                Tools: Git, Bitbucket, Bamboo, Tomcat, MySQL">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Full-stack Java Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.hiberus.com" class="hover:underline" target="_blank" rel="noopener">Hiberus</a>
+                    · Agile SCRUM
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Full-stack maintenance and features development of
+                    a monolith application for EUIPO with Spring, Native Kafka, JSP, Solr, and Bamboo CI/CD.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Jul 2017<br>Dec
+                2019</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-gfi"
+                data-timeline-title="J2EE Backend Developer — GFI"
+                data-timeline-text="Concurrent support for multiple enterprise Java projects across application servers and databases."
+                data-timeline-list="1 year of simultaneous support for 6 Java projects and 20 PHP projects|
+                4 months of full-stack development with Spring-boot and Angular JS|
+                2 months of full-stack development with Spring-boot and Angular TS|
+                Migration from JBoss to WildFly 14 on 3 applications and further maintenance|
+                Complete stack: JDK 7 & 8, Struts, JPA/Hibernate, Spring, Servlets, JSP, Spring Boot, Angular JS/TS, Tomcat, JBoss, WildFly 14, WebLogic, Oracle PL/SQL, MySQL, PostgreSQL, PHP, CakePHP, Yii, HTML, CSS, JavaScript, Linux Shell and Perl Scripts|">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">J2EE Backend Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://gfi.world" class="hover:underline" target="_blank" rel="noopener">GFI</a>
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Multi-project Java backend and
+                    full-stack work across Tomcat, WildFly, WebLogic, and Oracle PL/SQL.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Sep 2015<br>Jul
+                2017</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-sionin"
+                data-timeline-title="Android Developer — Sionin"
+                data-timeline-text="Full-cycle native Android developer in a four-person startup team, building two consumer apps from scratch. Responsible for application architecture, business logic, SQLite database design, and custom payment gateway integration across Android and PHP backends."
+                data-timeline-list="Built ConexWork and OhMyCut! from the ground up using Android SDK and Java 8|Application architecture, business logic, and SQLite database design|Custom payment gateway integration for both Android and PHP backends|Gradle build configuration and dependency management|End-to-end mobile product ownership in a small cross-functional team">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Android Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">
+                    <a href="https://www.sionin.com" class="hover:underline" target="_blank" rel="noopener">Sionin</a>
+                  </p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Greenfield development of two consumer Android apps (ConexWork, OhMyCut!), covering architecture, SQLite data layer, Gradle build setup, and custom payment gateway integration for Android and PHP.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Apr 2014<br>Sep
+                2015</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-espinosa"
+                data-timeline-title="Backend Developer — Espinosa Consultora"
+                data-timeline-text="Backend development and maintenance of ERP modules with native JavaScript, PHP and MySQL."
+                data-timeline-list="Evolution of ERP modules and business logic.|
+                Native JavaScript, PHP, MySQL,HTML, CSS, JavaScript.">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Backend Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">Espinosa Consultora</p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Backend development and maintenance of
+                    ERP modules with PHP, MySQL, and standard web technologies.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">Jan 2013<br>May
+                2013</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+                <div class="mt-1 w-px flex-1 bg-ink-700"></div>
+              </div>
+              <div class="timeline-trigger pb-10 pl-4" role="button" tabindex="0" data-timeline-id="tl-ambigrama"
+                data-timeline-title="Full Stack Developer — Ambigrama"
+                data-timeline-text="Full-stack web development for communication and marketing projects."
+                data-timeline-list="End-to-end delivery of client websites and web applications.|
+                PHP, HTML, CSS, JavaScript, MySQL, WordPress.">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Full Stack Developer</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">Ambigrama Comunicaciones</p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Full-stack web projects with PHP,
+                    MySQL, and front-end stack for communications clients.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="grid grid-cols-[7rem_1.5rem_1fr] items-start">
+              <time
+                class="pt-[0.35rem] pr-3 text-right text-xs leading-snug text-ink-500 tabular-nums">2012<br>2013</time>
+              <div class="flex flex-col items-center self-stretch">
+                <div class="mt-[0.35rem] h-3 w-3 shrink-0 rounded-full bg-ink-600 ring-4 ring-ink-900"></div>
+              </div>
+              <div class="timeline-trigger pl-4" role="button" tabindex="0" data-timeline-id="tl-practicas"
+                data-timeline-title="Internship · Freelance"
+                data-timeline-text="Internship and freelance web development: e-commerce, CMS, and PHP portals."
+                data-timeline-list="Antisa: 380 h — Magento e-commerce, web design and development.|
+                Freelance: PHP/MySQL portals (e.g. openwash.es, calzadostristan.es).">
+                <div>
+                  <h3 class="font-display text-lg font-semibold text-ink-50">Internship · Freelance</h3>
+                  <p class="mt-1 text-sm font-medium text-accent">Antisa Componentes</p>
+                  <p class="mt-2 space-y-1 text-sm leading-relaxed text-ink-300">Magento internship at Antisa
+                    Componentes and freelance PHP/MySQL sites.</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div id="timeline-layer" class="no-print">
+            <div id="timeline-backdrop" hidden class="fixed inset-0 z-40 bg-ink-900/80 backdrop-blur-sm"
+              aria-hidden="true"></div>
+            <div id="timeline-popups"
+              class="pointer-events-none fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"></div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title mb-4">Clients</h2>
+          <hr class="border-ink-700 mb-8" />
+
+          <div class="relative">
+            <div class="overflow-hidden">
+              <div id="clients-track" class="flex transition-transform duration-300 ease-in-out">
+
+                <!-- Slide 1 -->
+                <div class="grid grid-cols-3 gap-4 min-w-full">
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-accent text-white text-xs font-bold shrink-0">BdE</span>
+                    <p class="text-xs text-ink-500">2026 - now · Digital banking</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">Bank of Spain</h3>
+                    <p class="text-sm text-ink-400">Backend development for enterprise Java applications at Spain's central bank, via Indra.</p>
+                  </div>
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">CL</span>
+                    <p class="text-xs text-ink-500">2023 – 2025 · Logistics</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">CEVA Logistics</h3>
+                    <p class="text-sm text-ink-400">Design and delivery of hexagonal microservices for one of the world's largest logistics operators.</p>
+                  </div>
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">CS</span>
+                    <p class="text-xs text-ink-500">2022 – 2022 · Insurance</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">Caser</h3>
+                    <p class="text-sm text-ink-400">Backend development and maintenance for digital insurance services, via Sopra Steria.</p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="grid grid-cols-3 gap-4 min-w-full">
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">EPO</span>
+                    <p class="text-xs text-ink-500">2020 – 2021 · Intellectual property</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">European Patent Office</h3>
+                    <p class="text-sm text-ink-400">Full-stack development and BPMN workflow automation for the EPO, via Everis (NTT DATA).</p>
+                  </div>
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">EU</span>
+                    <p class="text-xs text-ink-500">2019 – 2020 · Intellectual property</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">EUIPO</h3>
+                    <p class="text-sm text-ink-400">Maintenance and feature development of a translations management platform via Hiberus.</p>
+                  </div>
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">CM</span>
+                    <p class="text-xs text-ink-500">2021 – 2022 · Innovation</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">Clarke Modet</h3>
+                    <p class="text-sm text-ink-400">Spring Boot refactoring and microservices delivery for a leading IP and innovation consulting firm, via NTT Data.</p>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="grid grid-cols-3 gap-4 min-w-full">
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">MM</span>
+                    <p class="text-xs text-ink-500">2017 – 2019 · Insurance</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">Mutua Madrileña</h3>
+                    <p class="text-sm text-ink-400">Java enterprise application development for one of Spain's leading insurance groups, via knowmad mood.</p>
+                  </div>
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">SAN</span>
+                    <p class="text-xs text-ink-500">2022 – 2023 · Insurance</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">Sanitas</h3>
+                    <p class="text-sm text-ink-400">Backend development and maintenance for digital health insurance services, via Sopra Steria.</p>
+                  </div>
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">ENG</span>
+                    <p class="text-xs text-ink-500">2023 – 2023 · Energy</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">Enagas</h3>
+                    <p class="text-sm text-ink-400">Java backend support for systems at Spain's national gas transmission operator, via Sopra Steria.</p>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="grid grid-cols-3 gap-4 min-w-full">
+                  <div class="card flex flex-col gap-3">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-ink-600 text-white text-xs font-bold shrink-0">EDF</span>
+                    <p class="text-xs text-ink-500">2017 – 2019 · Energy</p>
+                    <h3 class="font-display font-semibold text-ink-50 text-base leading-snug">EDF</h3>
+                    <p class="text-sm text-ink-400">Backend support for internal Java applications within the European energy sector, via GFI.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="no-print flex items-center justify-center gap-4 mt-6">
+              <button id="clients-prev" aria-label="Previous"
+                class="flex items-center justify-center w-8 h-8 rounded-full border border-ink-700 text-ink-400 hover:border-accent hover:text-accent transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <div id="clients-dots" class="flex gap-2">
+                <button data-dot="0" class="w-2 h-2 rounded-full bg-accent transition-colors" aria-label="Slide 1"></button>
+                <button data-dot="1" class="w-2 h-2 rounded-full bg-ink-600 transition-colors" aria-label="Slide 2"></button>
+                <button data-dot="2" class="w-2 h-2 rounded-full bg-ink-600 transition-colors" aria-label="Slide 3"></button>
+                <button data-dot="3" class="w-2 h-2 rounded-full bg-ink-600 transition-colors" aria-label="Slide 4"></button>
+              </div>
+              <button id="clients-next" aria-label="Next"
+                class="flex items-center justify-center w-8 h-8 rounded-full border border-ink-700 text-ink-400 hover:border-accent hover:text-accent transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title mb-4">Projects</h2>
+          <hr class="border-ink-700 mb-8" />
+          <div class="grid gap-8 sm:grid-cols-2">
+
+            <div class="flex flex-col gap-3">
+              <h3 class="font-display font-semibold text-ink-50">Personal projects on GitHub</h3>
+              <p class="text-sm text-ink-400 flex-1">Open source projects and experiments covering Java, Spring Boot, and miscellaneous tools published on GitHub.</p>
+              <a href="https://github.com/RuntyCybin" class="text-sm text-accent hover:underline inline-flex items-center gap-1" target="_blank" rel="noopener">
+                View on GitHub &rarr;
+              </a>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <h3 class="font-display font-semibold text-ink-50">Academic social network</h3>
+              <p class="text-sm text-ink-400 flex-1">Desktop social network built with Java SE and MySQL as the final project of the HNC programme at IES Severo Ochoa.</p>
+              <span class="text-sm text-ink-600 inline-flex items-center gap-1">Academic project &rarr;</span>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title mb-4">Technical Profile</h2>
+          <hr class="border-ink-700 mb-8">
+          <p class="text-sm leading-relaxed text-ink-300">
+            Since October 2017, my primary development is in Java (JDK 8–21) with Spring,
+            but for the last 5 years I started to focus on microservices and distributed systems,
+            with a strong emphasis on clean architecture, contract-first design, and CI/CD pipelines.
+            During those last years I gained experience with hexagonal architecture (API + BFF), OpenAPI 3,
+            Kafka (producer/consumer/streams), Amazon SQS, Camunda BPMN, and deployment on OpenShift/Kubernetes and AWS.
+          </p>
+        </section>
+      </div>
+
+      <aside class="space-y-8">
+        <section>
+          <h2 class="section-title mb-4">Skills</h2>
+          <div class="card space-y-4">
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Java &amp; backend</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Java 8–21</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Spring Boot</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Spring MVC</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Spring Security</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Hibernate/JPA</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Camunda</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Apache Camel</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Kafka</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Struts</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Android</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Contracts</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">OpenAPI 3</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Protobuf</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Testing</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">JUnit</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Mockito</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Rest Assured</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Selenium</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Gherkin</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">JMeter</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Data</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">PostgreSQL</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">MySQL</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">SQLite</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Oracle</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">MongoDB</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Infra</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Liquibase</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Solr</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Docker</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Kubernetes</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">OpenShift</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">AWS EC2</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Jenkins</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Bamboo</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">GitLab</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Frontend</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">JSP</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Angular</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">PrimeFaces</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">JavaScript</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">HTML</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">CSS</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500">Other</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">PHP</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Python</span>
+                <span class="rounded-full bg-ink-700 px-3 py-1 text-xs font-medium text-ink-200">Driving licence
+                  B</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title mb-4">Education</h2>
+          <div class="card space-y-4 text-sm">
+            <div>
+              <h3 class="font-display font-semibold text-ink-50">B.Eng. Technical Computer Systems (2nd year)</h3>
+              <p class="text-ink-400">Universidad de Alicante</p>
+              <p class="text-xs text-ink-500">2013 — 2014</p>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-ink-50">HNC in Computing + internship</h3>
+              <p class="text-ink-400">IES Severo Ochoa</p>
+              <p class="text-xs text-ink-500">2010 — 2012</p>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-ink-50">B.Eng. Technical Computer Systems (1st year)</h3>
+              <p class="text-ink-400">Universidad de Alicante</p>
+              <p class="text-xs text-ink-500">2007 — 2009</p>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-ink-50">High School (Bachillerato)</h3>
+              <p class="text-ink-400">San José, Murcia</p>
+              <p class="text-xs text-ink-500">2004 — 2006</p>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-ink-50">Secondary Education (E.S.O.)</h3>
+              <p class="text-ink-400">Salesianos San José Artesano, Elche</p>
+              <p class="text-xs text-ink-500">2000 — 2004</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title mb-4">Courses</h2>
+          <ul class="card space-y-3 text-sm text-ink-300">
+            <li class="font-display font-semibold text-ink-50">Projects in Enterprise Java (Packt)</li>
+            <li class="font-display font-semibold text-ink-50">Java Servlets and JSP (Udemy)</li>
+            <li class="font-display font-semibold text-ink-50">Spring Framework Master Class (Udemy)</li>
+            <li class="font-display font-semibold text-ink-50">Angular 1: From Zero to Hero (Udemy)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="section-title mb-4">Languages</h2>
+          <ul class="card space-y-2 text-sm">
+            <li class="flex justify-between">
+              <span>Russian</span>
+              <span class="text-ink-500">Native · R/W/S</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Spanish</span>
+              <span class="text-ink-500">R/W/S</span>
+            </li>
+            <li class="flex justify-between">
+              <span>English</span>
+              <span class="text-ink-500">R/W/S</span>
+            </li>
+          </ul>
+          <p class="mt-2 text-xs text-ink-500">R = reading · W = writing · S = speaking</p>
+        </section>
+      </aside>
     </div>
 
-    <main class="mx-auto max-w-5xl px-4 pb-16 pt-20 sm:px-6 sm:pt-24">
-      <header class="mb-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+    <footer class="mt-12 border-t border-ink-700 pt-8 pb-6 text-xs text-ink-500">
+      <div class="grid gap-8 sm:grid-cols-3">
+
+        <!-- Personal data -->
         <div>
-          <p class="section-title mb-3">Currículum vitae</p>
-          <h1 class="font-display text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
-            Nicolás Shelevoy
-          </h1>
-          <p class="mt-2 text-xl text-ink-500">
-            Arquitecto de software Java · Desarrollador senior
-          </p>
-          <p class="mt-4 max-w-2xl leading-relaxed text-ink-600">
-            Especialista en sistemas empresariales Java (JDK 8–21): diseño y evolución de
-            plataformas distribuidas, microservicios con Spring Boot, arquitectura hexagonal,
-            APIs OpenAPI, Kafka y despliegue en Kubernetes/OpenShift y AWS. Experiencia en
-            sectores logístico, propiedad intelectual (EUIPO/EPO) y energía.
-          </p>
+          <h4 class="mb-3 font-semibold uppercase tracking-widest text-ink-400">Personal Data</h4>
+          <ul class="space-y-1">
+            <li class="font-medium text-ink-300">Nicolás Shelevoy Shelevoy</li>
+            <li>Spanish · 12/11/1986</li>
+            <li>Av. Alba Rosa 13, 17800 Olot, Girona</li>
+          </ul>
         </div>
-        <aside class="card lg:min-w-[300px]">
-          <ul class="space-y-3 text-sm">
-            <li class="flex gap-3">
-              <span class="w-24 shrink-0 font-medium text-ink-400">Email</span>
+
+        <!-- Social networks -->
+        <div>
+          <h4 class="mb-3 font-semibold uppercase tracking-widest text-ink-400">Social Networks</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://github.com/RuntyCybin" class="text-accent hover:underline" target="_blank"
+                rel="noopener">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/devnikolay" class="text-accent hover:underline" target="_blank"
+                rel="noopener">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div>
+          <h4 class="mb-3 font-semibold uppercase tracking-widest text-ink-400">Contact</h4>
+          <ul class="space-y-1">
+            <li>
               <a href="mailto:nico_dev@protonmail.com" class="text-accent hover:underline">
                 nico_dev@protonmail.com
               </a>
             </li>
-            <li class="flex gap-3">
-              <span class="w-24 shrink-0 font-medium text-ink-400">Teléfono</span>
-              <span>+34 690 01 18 83</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="w-24 shrink-0 font-medium text-ink-400">Dirección</span>
-              <span>Av. Alba Rosa 13, 17800 Olot, Girona</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="w-24 shrink-0 font-medium text-ink-400">Nacionalidad</span>
-              <span>Española · 12/11/1986</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="w-24 shrink-0 font-medium text-ink-400">GitHub</span>
-              <a href="https://github.com/RuntyCybin" class="text-accent hover:underline" target="_blank" rel="noopener">
-                github.com/RuntyCybin
-              </a>
-            </li>
-            <li class="flex gap-3">
-              <span class="w-24 shrink-0 font-medium text-ink-400">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/devnikolay" class="text-accent hover:underline" target="_blank" rel="noopener">
-                linkedin.com/in/devnikolay
-              </a>
-            </li>
+            <li>+34 690 01 18 83</li>
           </ul>
-        </aside>
-      </header>
-
-      <div class="grid gap-8 lg:grid-cols-3">
-        <div class="space-y-8 lg:col-span-2">
-          <section>
-            <h2 class="section-title mb-4">Experiencia profesional</h2>
-            <p class="mb-4 text-sm text-ink-500">Sector: tecnologías de la información</p>
-            <div class="space-y-5">
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Arquitecto de software Java
-                  </h3>
-                  <time class="text-sm text-ink-400">Ene 2026 — Actualidad</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://www.indragroup.com" class="hover:underline" target="_blank" rel="noopener">Indra</a>
-                </p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>Diseño, gobierno y evolución de plataformas empresariales Java a gran escala.</li>
-                  <li>Enfoque en escalabilidad, resiliencia y mantenibilidad en sistemas distribuidos.</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Senior Java Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Mar 2022 — Dic 2025</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://www.cevalogistics.com" class="hover:underline" target="_blank" rel="noopener">CEVA Logistics</a>
-                  · Agile SCRUM
-                </p>
-                <p class="mt-2 text-sm text-ink-600">
-                  Diseño, desarrollo y mantenimiento de aplicaciones enterprise Java con arquitectura limpia y CI/CD.
-                </p>
-                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-ink-400">Proyectos clave</p>
-                <ul class="mt-2 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li><strong>Microservicios (JDK 11, Spring Boot):</strong> REST, tests con Rest Assured, GitLab, Jenkins y Kubernetes Dashboard.</li>
-                  <li><strong>Monolito web (JDK 8, Spring MVC, PrimeFaces):</strong> Liquibase, Selenium, GitLab, Jenkins y Kubernetes.</li>
-                  <li><strong>Microservicios hexagonales (JDK 21, Spring Boot, AWS EC2):</strong> JPA/Hibernate, Kafka, OpenAPI 3/Swagger, Docker, PostgreSQL/H2, JUnit y despliegue en EC2 Linux.</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Senior Java Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Abr 2021 — Mar 2022</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://www.atsistemas.com" class="hover:underline" target="_blank" rel="noopener">atSistemas</a>
-                  · SCRUM
-                </p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>Refactor Spring Boot con Kiuwan, Jenkins y OpenShift junto a QA y DevOps.</li>
-                  <li>Microservicios con Spring Cache, Apache Camel y Tomcat embebido.</li>
-                  <li>Mejora de cobertura con Mockito, JUnit y Jacoco integrados en CI/CD.</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Java Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Oct 2020 — Abr 2021</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://www.everis.com" class="hover:underline" target="_blank" rel="noopener">everis (NTT DATA)</a>
-                  · Java 8/11, Hibernate, Spring, Angular TS, MySQL · Cliente EPO
-                </p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>Full stack: Spring Boot, Spring MVC/Web, Angular TS, Tomcat embebido y MySQL.</li>
-                  <li>Spring Boot JDK 11, Camunda 7.15, JPA, MongoDB, Kafka, Mockito, Selenium, Jenkins y Bitbucket.</li>
-                  <li>Diseño de workflows BPMN, workers y tareas de usuario para la Oficina Europea de Patentes.</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Java Backend Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Dic 2019 — Ago 2020</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://www.hiberus.com" class="hover:underline" target="_blank" rel="noopener">Hiberus</a>
-                  · Cliente EUIPO · SCRUM
-                </p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>JDK 7: Spring Data/MVC/Web, JPA, Kafka 0.9, PrimeFaces, Apache Solr.</li>
-                  <li>Bitbucket, Jenkins CI/CD, Tomcat y MySQL.</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    J2EE Backend Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Jul 2017 — Dic 2019</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://gfi.world" class="hover:underline" target="_blank" rel="noopener">GFI</a>
-                </p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>Soporte simultáneo a más de 6 proyectos Java (Spring Boot, Struts, JPA/Hibernate).</li>
-                  <li>Stack: Tomcat, JBoss, WildFly 14, WebLogic, Oracle PL/SQL, MySQL y PostgreSQL.</li>
-                  <li>Full stack Spring Boot + Angular JS/TS; migración Tomcat → WildFly 14 en 3 aplicaciones.</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Android Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Sep 2015 — Jul 2017</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">
-                  <a href="https://www.sionin.com" class="hover:underline" target="_blank" rel="noopener">Sionin</a>
-                  · Android SDK, Java 8, SQLite, Gradle
-                </p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>Desarrollo desde cero de ConexWork y OhMyCut! en equipo de cuatro personas.</li>
-                  <li>Diseño de lógica de aplicación y base de datos; pasarelas de pago (Bankontakt).</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Desarrollador backend ERP
-                  </h3>
-                  <time class="text-sm text-ink-400">Abr 2014 — Sep 2015</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">Espinosa Consultora · PHP, HTML, CSS, JS, MySQL</p>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Full Stack Developer
-                  </h3>
-                  <time class="text-sm text-ink-400">Ene 2013 — May 2013</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">Ambigrama Comunicaciones · PHP, HTML, CSS, JS, MySQL</p>
-              </article>
-
-              <article class="card">
-                <div class="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 class="font-display text-lg font-semibold text-ink-900">
-                    Prácticas · Freelance
-                  </h3>
-                  <time class="text-sm text-ink-400">2012 — 2013</time>
-                </div>
-                <p class="mt-1 text-sm font-medium text-accent">Antisa Componentes · Freelance</p>
-                <ul class="mt-3 list-inside list-disc space-y-1 text-sm leading-relaxed text-ink-600">
-                  <li>Antisa: 380 h — Magento e-commerce, diseño y programación web.</li>
-                  <li>Freelance: portales PHP/MySQL (p. ej. jlmrozalen.com, calzadostristan.es).</li>
-                </ul>
-              </article>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="section-title mb-4">Clientes y proyectos</h2>
-            <div class="card">
-              <p class="text-sm leading-relaxed text-ink-600">
-                CEVA Logistics, EPO (Oficina Europea de Patentes), EUIPO, EDF, GFI (apps internas),
-                Clarke Monet, red social académica (Java SE + MySQL, HNC) y
-                <a href="https://github.com/RuntyCybin" class="text-accent hover:underline" target="_blank" rel="noopener">proyectos personales en GitHub</a>.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="section-title mb-4">Perfil técnico</h2>
-            <div class="card text-sm leading-relaxed text-ink-600 space-y-3">
-              <p>
-                Desde octubre de 2017, desarrollo principal en Java (JDK 8–21) con Spring Boot,
-                arquitectura hexagonal (API + BFF), OpenAPI 3, Kafka (productor/consumidor/streams),
-                Amazon SQS, Camunda BPMN y despliegue en OpenShift/Kubernetes y AWS.
-              </p>
-              <p>
-                Bases de datos: PostgreSQL, MySQL/MariaDB, Oracle PL/SQL y MongoDB.
-                Tests: JUnit, Mockito, Rest Assured, Selenium, Gherkin, JMeter.
-                Frontend: HTML5, CSS3, jQuery, Angular JS/TS (v1 y v10).
-              </p>
-            </div>
-          </section>
         </div>
 
-        <aside class="space-y-8">
-          <section>
-            <h2 class="section-title mb-4">Habilidades</h2>
-            <div class="card space-y-4">
-              <div>
-                <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">Java &amp; backend</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Java 8–21</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Spring Boot</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Spring MVC</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Hibernate/JPA</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Struts</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Camunda</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Apache Camel</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Kafka</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">OpenAPI 3</span>
-                </div>
-              </div>
-              <div>
-                <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">Datos &amp; infra</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">PostgreSQL</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">MySQL</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Oracle</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">MongoDB</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Liquibase</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Solr</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Docker</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Kubernetes</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">OpenShift</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">AWS EC2</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Jenkins</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">GitLab</span>
-                </div>
-              </div>
-              <div>
-                <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-400">Frontend &amp; otros</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Angular</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">PrimeFaces</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Android</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">PHP</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Python</span>
-                  <span class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-700">Permiso B</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="section-title mb-4">Formación</h2>
-            <div class="card space-y-4 text-sm">
-              <div>
-                <h3 class="font-display font-semibold text-ink-900">2.º grado Ing. Sistemas Técnicos Informáticos</h3>
-                <p class="text-ink-500">Universidad de Alicante</p>
-                <p class="text-xs text-ink-400">2013 — 2014</p>
-              </div>
-              <div>
-                <h3 class="font-display font-semibold text-ink-900">DAI + prácticas (HNC)</h3>
-                <p class="text-ink-500">IES Severo Ochoa</p>
-                <p class="text-xs text-ink-400">2010 — 2012</p>
-              </div>
-              <div>
-                <h3 class="font-display font-semibold text-ink-900">1.er grado Ing. Sistemas Técnicos Informáticos</h3>
-                <p class="text-ink-500">Universidad de Alicante</p>
-                <p class="text-xs text-ink-400">2007 — 2009</p>
-              </div>
-              <div>
-                <h3 class="font-display font-semibold text-ink-900">Bachillerato</h3>
-                <p class="text-ink-500">San José, Murcia</p>
-                <p class="text-xs text-ink-400">2004 — 2006</p>
-              </div>
-              <div>
-                <h3 class="font-display font-semibold text-ink-900">E.S.O.</h3>
-                <p class="text-ink-500">Salesianos San José Artesano, Elche</p>
-                <p class="text-xs text-ink-400">2000 — 2004</p>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="section-title mb-4">Cursos</h2>
-            <ul class="card space-y-3 text-sm text-ink-600">
-              <li>Projects in Enterprise Java (Packt)</li>
-              <li>Java Servlets and JSP — Udemy</li>
-              <li>Spring Framework Master Class — Udemy</li>
-              <li>Angular 1: From Zero to Hero — Udemy</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 class="section-title mb-4">Idiomas</h2>
-            <ul class="card space-y-2 text-sm">
-              <li class="flex justify-between">
-                <span>Ruso</span>
-                <span class="text-ink-400">Principal · L/E/O</span>
-              </li>
-              <li class="flex justify-between">
-                <span>Español</span>
-                <span class="text-ink-400">L/E/O</span>
-              </li>
-              <li class="flex justify-between">
-                <span>Inglés</span>
-                <span class="text-ink-400">L/E/O</span>
-              </li>
-            </ul>
-            <p class="mt-2 text-xs text-ink-400">L = lectura · E = escrito · O = oral</p>
-          </section>
-        </aside>
       </div>
+      <p class="mt-8 text-center text-ink-600">Last update: May 2026</p>
+    </footer>
+  </main>
+  <script type="module" src="/js/timeline.js"></script>
+  <script>
+    (function () {
+      const track = document.getElementById('clients-track');
+      const dots = document.querySelectorAll('#clients-dots [data-dot]');
+      const prevBtn = document.getElementById('clients-prev');
+      const nextBtn = document.getElementById('clients-next');
+      const total = track.children.length;
+      let current = 0;
 
-      <footer class="mt-12 border-t border-ink-100 pt-6 text-center text-xs text-ink-400">
-        Última actualización: mayo 2026 · Basado en CV_NICOLAS_SHELEVOY.pdf
-      </footer>
-    </main>
-  </body>
+      function goTo(index) {
+        current = index;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => {
+          d.classList.toggle('bg-accent', i === current);
+          d.classList.toggle('bg-ink-600', i !== current);
+        });
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current === total - 1;
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+      dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.dot)));
+
+      goTo(0);
+    })();
+  </script>
+</body>
+
 </html>

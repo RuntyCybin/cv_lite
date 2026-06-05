@@ -14,7 +14,15 @@
   }
 
   .card {
-    @apply rounded-xl border border-ink-100 bg-white p-5 shadow-sm;
+    @apply rounded-xl border border-ink-700 bg-ink-800 p-5 shadow-sm;
+  }
+
+  .timeline-trigger {
+    @apply cursor-pointer rounded-lg transition-colors hover:bg-ink-800/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .timeline-popup {
+    @apply card max-w-lg w-full shadow-xl;
   }
 }
 
@@ -26,9 +34,11 @@
 
     body {
       background: white !important;
+      color: #1c2632 !important;
     }
 
     .card {
+      background: white !important;
       box-shadow: none !important;
       border-color: #e8ecf0 !important;
     }
