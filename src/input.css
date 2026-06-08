@@ -26,21 +26,75 @@
   }
 }
 
-@layer utilities {
-  @media print {
-    .no-print {
-      display: none !important;
-    }
+/* Print styles outside @layer so they win over all layered Tailwind utilities */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 
-    body {
-      background: white !important;
-      color: #1c2632 !important;
-    }
+  body {
+    background: white !important;
+    color: #1c2632 !important;
+  }
 
-    .card {
-      background: white !important;
-      box-shadow: none !important;
-      border-color: #e8ecf0 !important;
-    }
+  /* Reset light ink colors to dark for readability on white paper */
+  .text-ink-50,
+  .text-ink-100,
+  .text-ink-200,
+  .text-ink-300 {
+    color: #1c2632 !important;
+  }
+
+  .text-ink-400,
+  .text-ink-500 {
+    color: #354759 !important;
+  }
+
+  .text-ink-600 {
+    color: #4a5d73 !important;
+  }
+
+  /* Keep accent readable on white */
+  .text-accent,
+  a {
+    color: #0f766e !important;
+  }
+
+  /* Reset white text used in icon badges */
+  .text-white {
+    color: white !important;
+  }
+
+  /* Cards and surfaces */
+  .card {
+    background: white !important;
+    box-shadow: none !important;
+    border-color: #e8ecf0 !important;
+  }
+
+  .bg-ink-900,
+  .bg-ink-800,
+  .bg-ink-700 {
+    background-color: white !important;
+  }
+
+  /* Timeline connector line */
+  .bg-ink-700 {
+    background-color: #e8ecf0 !important;
+  }
+
+  /* Timeline / badge circles keep their accent or muted color */
+  .bg-accent {
+    background-color: #0d9488 !important;
+  }
+
+  .bg-ink-600 {
+    background-color: #c5ced8 !important;
+  }
+
+  /* Skill tag pills */
+  .rounded-full.bg-ink-700 {
+    background-color: #e8ecf0 !important;
+    color: #1c2632 !important;
   }
 }
